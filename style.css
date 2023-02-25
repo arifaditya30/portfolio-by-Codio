@@ -1,5 +1,18 @@
 section{
     padding-top: 128px;
+    position: relative;
+}
+
+section::before {
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    font-weight: 700;
+    color: gray;
+    opacity: 0.25;
+    position: absolute;
+    top: 20px ;
+    left: -30px ;
 }
 
 .navbar {
@@ -14,7 +27,7 @@ section{
 
 }
 
-.btn:hover{
+.btn:hover, .btn.button.active{
     border: 1px solid black;
     background-color: black;
     color: white;
@@ -33,6 +46,24 @@ section{
 
 #arrow{
     animation: 2s updown infinite;
+}
+
+.about::before{
+    content: 'About';
+}
+
+.about-exp-item {
+    margin-top: 32px;
+}
+
+.about-exp-item-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-exp-item-detail{
+    display: none;
 }
 
 @keyframes updown {
