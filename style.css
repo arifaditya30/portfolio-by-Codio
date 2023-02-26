@@ -127,6 +127,32 @@ section::before {
     content: "Web Project";
 }
 
+.contact{
+    padding-bottom: 128px;
+
+}
+
+.contact::before{
+    content: 'Contact';
+}
+
+.form-contact {
+    border: 1px solid black;
+    padding : 64px 32px;
+    width: 500;
+}
+
+#btn-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+
+}
+
+.form-label{
+    font-weight: 500;
+}
+
 @keyframes updown {
     0% {
         transform: translateY(0);
