@@ -13,6 +13,7 @@ section::before {
     position: absolute;
     top: 20px ;
     left: -30px ;
+    
 }
 
 .navbar {
@@ -38,6 +39,10 @@ section::before {
 }
 .home h3{
     font-size: 64px;
+}
+
+.home .col-4 img{
+    width: 100%;
 }
 
 .home .arrow img {
@@ -151,6 +156,20 @@ section::before {
 
 .form-label{
     font-weight: 500;
+}
+
+@media only screen and (max-width : 768px) {
+    .home img {
+        width: 50%;
+    }
+
+    section::before {
+        left: 0px;
+        font-size: 64px;
+    }
+
+
+    
 }
 
 @keyframes updown {
